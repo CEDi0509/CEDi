@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact Us – GreenEats</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <!-- Header / Navigation -->
+  <header>
+    <div class="container navbar">
+      <div class="logo">
+        <a href="../index.html">
+          <img src="images/GreenEatsLogo.png" alt="Green Eats Logo" />
+        </a>
+      </div>
+      <span class="nav-toggle" id="navToggle">&#9776;</span>
+      <ul id="navMenu">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="recipes.html">Recipes</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="contact.html" class="active">Contact Us</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <!-- Contact Section -->
+  <section class="container">
+    <h2 class="section-title">Get in Touch</h2>
+
+    <!-- Contact Form -->
+    <form id="contactForm" novalidate>
+      <div class="form-group">
+        <label for="name">Name <span style="color: #e53935;">*</span></label>
+        <input type="text" id="name" name="name" required />
+        <span class="error" aria-live="polite"></span>
+      </div>
+
+      <div class="form-group">
+        <label for="email">Email <span style="color: #e53935;">*</span></label>
+        <input type="email" id="email" name="email" required />
+        <span class="error" aria-live="polite"></span>
+      </div>
+
+      <div class="form-group">
+        <label for="message">Message <span style="color: #e53935;">*</span></label>
+        <textarea id="message" name="message" required></textarea>
+        <span class="error" aria-live="polite"></span>
+      </div>
+
+      <button type="submit">Submit</button>
+    </form>
+
+    <!-- Comment / Discussion Section -->
+    <div class="comments-container">
+      <h3>Discussion</h3>
+      <ul id="commentList" class="comment-list">
+        <!-- Existing comments will populate here -->
+      </ul>
+
+      <!-- Comment Form -->
+      <form id="commentForm" class="comment-form">
+        <div class="form-group">
+          <label for="commentAuthor">Your Name</label>
+          <input type="text" id="commentAuthor" name="commentAuthor" placeholder="e.g. Jane Doe" />
+        </div>
+        <div class="form-group">
+          <label for="commentText">Your Comment</label>
+          <textarea id="commentText" name="commentText" placeholder="Share your thoughts..."></textarea>
+        </div>
+        <button type="submit">Post Comment</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container footer-container">
+      <p>&copy; 2025 GreenEats. All rights reserved.</p>
+      <div class="social-icons">
+        <a href="#"><img src="images/IGLogo.png" alt="IG" width="24" /></a>
+        <a href="#"><img src="images/FBLogo.png" alt="FB" width="24" /></a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JS Scripts -->
+  <script src="../js/validation.js"></script>
+  <script src="../js/comments.js"></script>
+  <script>
+    // Mobile nav toggle
+    document.getElementById("navToggle").addEventListener("click", function () {
+      document.getElementById("navMenu").classList.toggle("show");
+    });
+  </script>
+</body>
+</html>

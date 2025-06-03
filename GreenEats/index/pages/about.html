@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About Us – GreenEats</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <!-- Header / Navigation -->
+  <header>
+    <div class="container navbar">
+      <div class="logo">
+        <a href="../index.html">
+          <img src="images/GreenEatsLogo.png" alt="Green Eats Logo" />
+        </a>
+      </div>
+      <span class="nav-toggle" id="navToggle">&equiv;</span>
+      <ul id="navMenu">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="about.html" class="active">About Us</a></li>
+        <li><a href="recipes.html">Recipes</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <!-- About Section -->
+  <section class="container">
+    <h2 class="section-title">About GreenEats</h2>
+    <p>
+      Welcome to <strong>GreenEats</strong>, your go-to resource for delicious,
+      sustainable recipes and eco-friendly food tips. Our mission is to
+      empower individuals to reduce their carbon footprint through everyday
+      meal choices. Founded in 2025, our core values are:
+    </p>
+    <ul style="margin: 1rem 0 2rem 1.5rem; color: #555; line-height: 1.5;">
+      <li><strong>Delicious & Accessible:</strong> Plant-based meals that don’t compromise on taste.</li>
+      <li><strong>Education & Awareness:</strong> Bite-sized sustainability facts and deeper “Learn More” links.</li>
+      <li><strong>Community & Sharing:</strong> A space where home cooks, bloggers, and advocates unite.</li>
+    </ul>
+
+    <h3>Why “GreenEats”?</h3>
+    <p>
+      We believe that small changes in the kitchen can lead to big impacts on
+      the planet. By swapping ingredients, reducing food waste, and choosing
+      eco-friendly recipes, we can collectively lower greenhouse gas emissions.
+      That’s why we built GreenEats: to make sustainable cooking approachable,
+      fun, and community-driven.
+    </p>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container footer-container">
+      <p>&copy; 2025 GreenEats. All rights reserved.</p>
+      <div class="social-icons">
+        <a href="#"><img src="images/IGLogo.png" alt="IG" width="24" /></a>
+        <a href="#"><img src="images/FBLogo.png" alt="FB" width="24" /></a>
+      
+      </div>
+    </div>
+  </footer>
+
+  <!-- JS: Mobile nav toggle -->
+  <script>
+    document.getElementById("navToggle").addEventListener("click", function () {
+      document.getElementById("navMenu").classList.toggle("show");
+    });
+  </script>
+</body>
+</html>

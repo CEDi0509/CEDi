@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Blog – GreenEats</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <!-- Header / Navigation -->
+  <header>
+    <div class="container navbar">
+      <div class="logo">
+        <a href="../index.html">
+          <img src="images/GreenEatsLogo.png" alt="Green Eats Logo" />
+        </a>
+      </div>
+      <span class="nav-toggle" id="navToggle">&#9776;</span>
+      <ul id="navMenu">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="recipes.html">Recipes</a></li>
+        <li><a href="blog.html" class="active">Blog</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <!-- Blog Section -->
+  <section class="container">
+    <h2 class="section-title">GreenEats Blog</h2>
+
+    <div class="card-container">
+      <!-- Blog Post 1 -->
+      <div class="card">
+        <img src="images/Blog1.jpg" alt="Reduce Kitchen Waste" />
+        <div class="card-body">
+          <h3>3 Ways to Reduce Kitchen Waste</h3>
+          <p>
+            Food waste makes up 8% of global greenhouse gas emissions.
+            Learn these simple steps to minimize scraps and leftovers.
+          </p>
+          <a href="#">Read More</a>
+        </div>
+      </div>
+
+      <!-- Blog Post 2 -->
+      <div class="card">
+        <img src="images/Blog2.jpg" alt="Plant-Powered Meal Planning" />
+        <div class="card-body">
+          <h3>Plant-Powered Meal Planning</h3>
+          <p>
+            Discover how to plan a week’s worth of plant-based meals that
+            save you time, money, and carbon emissions.
+          </p>
+          <a href="#">Read More</a>
+        </div>
+      </div>
+      <!-- (Add 1 more post to meet “2–3 previews” requirement) -->
+      <div class="card">
+        <img src="images/Blog1.jpg" alt="Seasonal Eating Guide" />
+        <div class="card-body">
+          <h3>Seasonal Eating Guide</h3>
+          <p>
+            Eating local, seasonal produce reduces transport emissions.
+            Here’s a month-by-month guide to Aussie produce.
+          </p>
+          <a href="#">Read More</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container footer-container">
+      <p>&copy; 2025 GreenEats. All rights reserved.</p>
+      <div class="social-icons">
+        <a href="#"><img src="images/IGLogo.png" alt="IG" width="24" /></a>
+        <a href="#"><img src="images/FBLogo.png" alt="FB" width="24" /></a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JS: Mobile nav toggle -->
+  <script>
+    document.getElementById("navToggle").addEventListener("click", function () {
+      document.getElementById("navMenu").classList.toggle("show");
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Thank You – GreenEats</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <!-- Header / Navigation -->
+  <header>
+    <div class="container navbar">
+      <div class="logo">
+        <a href="../index.html">
+          <img src="images/GreenEatsLogo.png" alt="Green Eats Logo" />
+        </a>
+      </div>
+      <span class="nav-toggle" id="navToggle">&#9776;</span>
+      <ul id="navMenu">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="recipes.html">Recipes</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <!-- Thank You Message -->
+  <section class="container">
+    <div style="text-align: center; margin-top: 4rem;">
+      <h2 class="section-title">Thank You!</h2>
+      <p>
+        We’ve received your message and will get back to you soon.<br />
+        In the meantime, feel free to explore more recipes or check our blog.
+      </p>
+      <a href="../index.html" class="btn" style="margin-top: 1rem;">Return to Home</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container footer-container">
+      <p>&copy; 2025 GreenEats. All rights reserved.</p>
+      <div class="social-icons">
+        <a href="#"><img src="images/IGLogo.png" alt="IG" width="24" /></a>
+        <a href="#"><img src="images/FBLogo.png" alt="FB" width="24" /></a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JS: Mobile nav toggle -->
+  <script>
+    document.getElementById("navToggle").addEventListener("click", function () {
+      document.getElementById("navMenu").classList.toggle("show");
+    });
+  </script>
+</body>
+</html>

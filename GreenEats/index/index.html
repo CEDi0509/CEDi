@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GreenEats – Home</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <!-- Header / Navigation -->
+  <header>
+    <div class="container navbar">
+      <div class="logo">
+        <a href="index.html">
+          <img src="images/GreenEatslogo.png" alt="Green Eats Logo" />
+        </a>
+      </div>
+      <span class="nav-toggle" id="navToggle">&#9776;</span>
+      <ul id="navMenu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="pages/about.html">About Us</a></li>
+        <li><a href="pages/recipes.html">Recipes</a></li>
+        <li><a href="pages/blog.html">Blog</a></li>
+        <li><a href="pages/contact.html">Contact Us</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Eat Green. Live Clean.</h1>
+      <p>Discover delicious recipes that nourish you and the planet.</p>
+      <a href="pages/recipes.html" class="btn">Explore Recipes</a>
+    </div>
+  </section>
+
+  <!-- Featured Recipes -->
+  <section class="container">
+    <h2 class="section-title">Featured Recipes</h2>
+    <div class="card-container">
+      <!-- Card 1 -->
+      <div class="card">
+        <img src="images/SmokyChickpea&SpinachCoconutCurry.jpg" alt="Smoky Chickpea & Spinach Coconut Curry" />
+        <div class="card-body">
+          <h3>Smoky Chickpea & Spinach Coconut Curry</h3>
+          <p>Saves <strong>2.3 kg CO₂</strong> vs. beef stir-fry.</p>
+          <a href="pages/recipes.html">View Recipe</a>
+        </div>
+      </div>
+      <!-- Card 2 -->
+      <div class="card">
+        <img src="images/HeartyLentilsBolognese.jpg" alt="Hearty Lentils Bolognese" />
+        <div class="card-body">
+          <h3>Hearty Lentils Bolognese</h3>
+          <p>Saves <strong>1.8 kg CO₂</strong> vs. chicken salad.</p>
+          <a href="pages/recipes.html">View Recipe</a>
+        </div>
+      </div>
+      <!-- (Add more cards as needed) -->
+    </div>
+  </section>
+
+  <!-- Latest Blog Posts -->
+  <section class="container">
+    <h2 class="section-title">Latest Articles</h2>
+    <div class="card-container">
+      <!-- Blog Excerpt 1 -->
+      <div class="card">
+        <img src="images/blog1.jpg" alt="Blog 1" />
+        <div class="card-body">
+          <h3>3 Ways to Reduce Kitchen Waste</h3>
+          <p>Learn easy steps to cut down on leftovers and scraps.</p>
+          <a href="pages/blog.html">Read More</a>
+        </div>
+      </div>
+      <!-- Blog Excerpt 2 -->
+      <div class="card">
+        <img src="images/blog2.jpg" alt="Blog 2" />
+        <div class="card-body">
+          <h3>Plant-Powered Meal Planning</h3>
+          <p>Plan a week’s worth of meals that save carbon and time.</p>
+          <a href="pages/blog.html">Read More</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container footer-container">
+      <p>&copy; 2025 GreenEats. All rights reserved.</p>
+      <div class="social-icons">
+        <a href="#"><img src="images/IGLogo.png" alt="IG" width="24" /></a>
+        <a href="#"><img src="images/FBLogo.png" alt="FB" width="24" /></a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JS: Toggle mobile nav -->
+  <script>
+    document.getElementById("navToggle").addEventListener("click", function () {
+      document.getElementById("navMenu").classList.toggle("show");
+    });
+  </script>
+</body>
+</html>
